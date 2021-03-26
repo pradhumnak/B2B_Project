@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>LeadOrion | B2B </title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid " id="jumbotron" style="height: 50vh; color: black;">
+    <div class="container">
+      <h1 class="display-4 logo hvr-grow-shadow" style="font-weight: 900;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >{{ congrats }}</h1>
+      <button type="button" class="btn btn-primary btn-lg" id="backtohome" onclick="location.href='/'"  >Go to Home</button>
+    </div>
+  </div>
+  
+
+
+<script src="{% static 'JS/B2B_App/script.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>   
+  AOS.init(); 
+</script>
+<script type="text/javascript"> 
+  window.history.forward(); 
+  function noBack() { 
+      window.history.forward(); 
+  } 
+</script> 
+</body>
+
+</html>

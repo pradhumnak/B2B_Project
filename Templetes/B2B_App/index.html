@@ -1,0 +1,329 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'CSS/B2B_App/style.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>LeadOrion | B2B </title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid " id="heroplane" style="background-image: url('{% static "images/B2B_App/jumbotron.jpg" %}');">
+    <div class="container">
+      <h1 class="display-4 logo hvr-grow-shadow" style="font-weight: 900;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >LeadOrion</h1>
+      <p >Start your new Marketing experience here</p>
+      <button type="button" class="btn btn-primary btn-lg" id="btnstart">Get Started</button>
+    </div>
+    
+  </div>
+
+
+  <div id="navbar">
+    <a id="homebtn">Home</a>
+    <a id="sevbtn">Services</a>
+    <a class="hidden" id="carrbtn">Carrier</a>
+    <a class="hidden"  id="indbtn">Industry</a>
+    <a id="blogbtn">Blogs</a>
+    <a id="abtusbtn">About Us</a>
+    <a id="cntbtn">Contact Us</a>
+
+   
+  </div>
+
+  <section style="background-image: url('{% static "images/B2B_App/whatwedo4.jpg" %}');" class="services-area pt-100 pb-70" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 mx-auto text-center">
+					<div class="section-title">
+						<h4>what we do</h4>
+						<p>This are the workplaces we dwell into</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6"data-aos="zoom-in"data-aos-delay="500" >
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-envelope"></i>
+						<h4>Email Marketing</h4>
+						<p>Email marketing Content is the king and has immense potential to attract more buyers to contact you. This is where we can help you best. With our custom email marketing services, building a surefire email marketing strategy will become much easier </p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 " data-aos="zoom-in"data-aos-delay="500">
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-database"></i>
+						<h4>List Building            </h4>
+						<p>People in businesses keep changing, which makes it difficult for you to identify the current contacts for your business. Imagine how productive your sales reps will be, if they get better chances to reach the right contacts in the very first attempt! </p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in"data-aos-delay="500">
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-diamond"></i>
+						<h4>Branding</h4>
+						<p> We believe in creating a strong, positive perception of company, its products or services in the customer's mind by combining various factors. </p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in"data-aos-delay="500">
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-briefcase"></i>
+						<h4>Account Based Marketing</h4>
+						<p>Identifying accounts that match your ideal clients and targeting the key decision makers at those companies with personalized messages and content through our marketing and advertising campaigns.
+
+            </p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in"data-aos-delay="500">
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-address-book"></i>
+						<h4>Appointment Generation</h4>
+						<p>Appointment setting is the backbone of a healthy and productive sales pipeline and is the heart of any lead generation campaign.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6" data-aos="zoom-in"data-aos-delay="500">
+					<div class="single-service hvr-grow-shadow">
+						<i class="fa fa-life-ring"></i>
+						<h4>Support</h4>
+						<p>Provide support/assistance on various product portfolios to improve customer reach  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </section>
+
+<div style="background-image: url('{% static "images/B2B_App/aboutus1.jpg" %}');" class="aboutus-section" id="aboutus_sec" style="margin-bottom: 50px;"data-aos="fade-up"data-aos-delay="500" >
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-auto text-center">
+					<div class="section-title">
+						<h4>About Us</h4>
+						<p>We believe in serving customer </p>
+					</div>
+				</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+					<div>
+            <div class="aboutus">
+              <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+              <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+          </div>
+					</div>
+       </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="aboutus-banner">
+            <img src="{% static 'images/B2B_App/aboutus.jpg' %}" alt="">
+        </div>
+     </div>
+      <div class="col-md-5 col-sm-6 col-xs-12">
+      <div class="feature" style="margin-left: 100px;">
+          <div class="feature-box">
+              <div class="clearfix">
+                  <div class="iconset">
+                      <span class="glyphicon glyphicon-cog icon"></span>
+                  </div>
+                  <div class="feature-content">
+                      <h4>Work with heart</h4>
+                      <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="feature-box">
+            <div class="clearfix">
+                <div class="iconset">
+                    <span class="glyphicon glyphicon-cog icon"></span>
+                </div>
+                <div class="feature-content">
+                    <h4>Reliable services</h4>
+                    <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-box">
+          <div class="clearfix">
+              <div class="iconset">
+                  <span class="glyphicon glyphicon-cog icon"></span>
+              </div>
+              <div class="feature-content">
+                  <h4>Great support</h4>
+                  <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+      </div>
+  
+  
+  </div>
+  </div>
+</div>
+
+
+<div style="background-image: url('{% static "images/B2B_App/contactus2.jpg" %}');" class="contactus-section" id="contactus_sec" style="margin-top: 75px;" data-aos="zoom-out-up" data-aos-delay="400" >
+  <div class="container">
+      <div class="row " >
+        <div class="col-xl-8 mx-auto text-center">
+					<div class="section-title">
+						<h4>Contact Us</h4>
+						<p style="color:white;">Please let us know what you think</p>
+					</div>
+				</div>
+      </div>
+          <form action="B2B_App/fdrpage/" method="POST"> 
+            {% csrf_token %}
+            {{ form }}
+            <div class="row">
+              <div class="d-flex justify-content-center">
+                <div class="section-title">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="input-group input-group-lg">
+                          <label for="validationDefault01">First name</label>
+                          <input type="text" name="f_name" class="form-control " id="validationDefault01" placeholder="First name"  required>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-group input-group-lg">
+                          <label for="validationDefault02">Last name</label>
+                          <input type="text" name="l_name" class="form-control" id="validationDefault02" placeholder="Last name"required>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-group input-group-lg">
+                          <label for="validationDefaultUsername">Email-id</label>
+                            <input type="email" name="email" class="form-control" id="validationDefaultUsername" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>
+                        <div class="input-group input-group-lg">
+                          <label for="validationDefault05">Phone</label><br>
+                          <div class="input-group-prepend">
+                            
+                          <select class="btn btn-outline-secondary dropdown-toggle" style="background-color: white;" name="c_code" id="selcode" placeholder="Choose Country Code" required>
+      
+                            </select>
+                            <span id="msg_cc" style="color: red; font-weight: 500;font-style: italic;"></span>
+                          </div>
+                          <input type="tel" name="mob_num" class="form-control" placeholder="Phone-Number" aria-label="Number input with dropdown button" >
+                        </div>
+                     
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-group input-group-lg">
+                          <label for="validationDefaultUsername">Please type your message here</label>
+                            <input type="text" name="message" class="form-control" id="validationDefaultUsername" placeholder="Message" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>
+                        <br>
+                        <button class="btn btn-primary" type="submit" onclick="checkCountryCode()">Submit</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
+          </form>
+      
+  </div>
+</div>
+
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row" data-aos="fade-up"data-aos-delay="200" >
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-map-marker"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>9876543210 0</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                    
+                      <div class="footer-social-icon" data-aos="zoom-in"data-aos-delay="500">
+                          <span>Follow us</span>
+                          <a href="https://www.instagram.com/instagram/?hl=en"><i class="fa fa-linkedin fa-2x"></i></a>
+                          <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-2x"></i></a>
+                          <a href="https://facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+                          <a href="https://in.pinterest.com/"><i class="fa fa-instagram fa-2x"></i></a>
+    
+                      </div>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2021, All Right Reserved LeadOrion</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="{% static 'JS/B2B_App/script.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>   
+  AOS.init(); 
+</script>
+</body>
+
+</html>
